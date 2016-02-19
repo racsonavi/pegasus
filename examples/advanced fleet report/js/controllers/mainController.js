@@ -4,11 +4,11 @@ if (serv == "") {
     var serverArr = serverAux.split('/')
 
     if (serverArr[2] == "localhost:8080") {
-        var server = 'https://pegasus1.pegasusgateway.com/api/';
+        var server = 'https://gps.gc911.net/';
     }
 
     if (serverArr[2] == "cdn2.pegasusgateway.com") {
-        var server = 'https://pegasus1.pegasusgateway.com/api/';
+        var server = 'https://gps.gc911.net/';
     }    
 }
  
