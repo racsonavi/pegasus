@@ -223,7 +223,7 @@ app.controller('mainController', function($scope, $http, $localStorage, $locatio
 
             })
             .error(function(data, s, h) {
-                $scope.alert = 'Wrong username or password , please rectify.';
+                $scope.alert = 'Usuario o contraseña incorrecta.';
                 $scope.showAlert();
             });
 
