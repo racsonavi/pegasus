@@ -1,22 +1,6 @@
-var serv = document.referrer;
-if (serv == "") {
-    var serverAux = document.URL;
-    var serverArr = serverAux.split('/')
 
-    if (serverArr[2] == "localhost:8080") {
-        var server = 'https://gps.gc911.net/';
-    }
 
-    if (serverArr[2] == "cdn2.pegasusgateway.com") {
-        var server = 'https://gps.gc911.net/';
-    }    
-}
- 
-else {
-    var serverAux = serv.split('/');
-    var server = "https://" + serverAux[2] + "/api/";
-}
-
+var server = 'https://gps.gc911.net/';
 
 app.controller('mainController', function($scope, $http, $localStorage, $location, $timeout, $q, $log, $mdDialog, $mdToast, $document, $interval) {
 
