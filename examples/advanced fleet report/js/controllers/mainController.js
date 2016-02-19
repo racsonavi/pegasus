@@ -1,6 +1,6 @@
 
 
-var server = 'https://gps.gc911.net/';
+var server = 'https://gps.gc911.net/api/';
 
 app.controller('mainController', function($scope, $http, $localStorage, $location, $timeout, $q, $log, $mdDialog, $mdToast, $document, $interval) {
 
